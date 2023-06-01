@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>To-Do List</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <form id="taskForm">
+          <input type="text" id="taskInput" placeholder="Add a new task">
+          <select id="prioritySelect">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+          <button type="submit">Add Task</button>
+        </form>
+        <div class="filter">
+            <label for="filterSelect">Filter by Priority:</label>
+            <select id="filterSelect">
+              <option value="all">All</option>
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+          <ul id="taskList">
+            <!-- Tasks will be dynamically added here -->
+          </ul>
+        </div>
+
+       
+      <script src="script.js"></script>
+</body>
+</html>
